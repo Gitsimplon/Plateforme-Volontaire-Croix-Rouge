@@ -1,10 +1,13 @@
 ---
-title: Redheart Volunteers Platform
-emoji: 📈
-colorFrom: green
-colorTo: gray
+title: RedHeart Volunteers Platform ❤️
+colorFrom: purple
+colorTo: blue
+emoji: 🐳
 sdk: static
 pinned: false
+tags:
+  - deepsite-v3
 ---
 
-Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+# Welcome to your new DeepSite project!
+This project was created with [DeepSite](https://deepsite.hf.co).
