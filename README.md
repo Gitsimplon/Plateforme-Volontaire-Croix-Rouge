@@ -6,7 +6,7 @@ emoji: 🐳
 sdk: static
 pinned: false
 tags:
-  - deepsite-v3
+  - volontaire
 ---
 
 # Welcome to your new DeepSite project!
