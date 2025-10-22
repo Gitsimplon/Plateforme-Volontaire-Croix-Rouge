@@ -1,5 +1,3 @@
----
-
 ```markdown
 # ❤️ RedHeart Volunteers Platform — Plateforme de Volontariat de la Croix-Rouge Nigérienne
 
