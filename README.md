@@ -1,77 +1,182 @@
-<<<<<<< HEAD
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
-
-## About Laravel
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-=======
----
-title: RedHeart Volunteers Platform ❤️
-colorFrom: purple
-colorTo: blue
-emoji: 🐳
-sdk: static
-pinned: false
-tags:
-  - deepsite-v3
 ---
 
-# Welcome to your new DeepSite project!
-This project was created with [DeepSite](https://deepsite.hf.co).
->>>>>>> eedb8d6 (Contexte ET JUSTIFICATION)
+```markdown
+# ❤️ RedHeart Volunteers Platform — Plateforme de Volontariat de la Croix-Rouge Nigérienne
+
+> Une plateforme web dynamique, inclusive et sécurisée pour la gestion, la mobilisation et la fidélisation des volontaires au Niger.
+
+---
+
+## 🧭 Présentation du projet
+
+Le projet **RedHeart Volunteers Platform** est une initiative de la **Croix-Rouge Nigérienne (CRN)** soutenue par **NSIA**, **la FICR** et d'autres partenaires techniques.  
+Il vise à **digitaliser la gestion du volontariat** à travers une plateforme web moderne et accessible à tous.
+
+Cette plateforme a pour objectif de :
+- Centraliser les inscriptions et profils des volontaires.
+- Faciliter la communication entre volontaires et responsables régionaux.
+- Offrir un tableau de bord de suivi statistique par genre, région et activité.
+- Valoriser la contribution des volontaires dans les actions humanitaires.
+- Sécuriser et tracer les données des volontaires en temps réel.
+
+---
+
+## 🎯 Objectifs du projet
+
+### Objectif général
+Créer et déployer une plateforme web de volontariat **efficace, interactive et sécurisée** pour soutenir les actions humanitaires de la Croix-Rouge Nigérienne.
+
+### Objectifs spécifiques
+- Développer une **application web responsive et intuitive** basée sur Laravel.
+- Permettre l’inscription, la gestion de profil et la recherche d’opportunités.
+- Faciliter la coordination, la communication et le suivi des activités.
+- Offrir un tableau de bord analytique et des rapports exportables.
+- Assurer la **sécurité et la confidentialité** des données à caractère personnel.
+- Former les équipes de la CRN à l’administration de la plateforme.
+
+---
+
+## 🧩 Fonctionnalités clés
+
+| Interface | Description |
+|------------|-------------|
+| 🌍 **Publique** | Accès général au formulaire d’inscription, documents, et informations sur le volontariat. |
+| 👤 **Volontaire** | Création de profil, consultation des missions, messagerie interne, suivi personnel. |
+| 🧑‍💼 **Gestionnaire** | Suivi régional, validation des inscriptions, gestion des activités locales. |
+| 🛠️ **Administrateur** | Tableau de bord complet, statistiques, rapports, gestion des utilisateurs et des rôles. |
+
+Autres fonctionnalités :
+- Système d’authentification (Fortify/Jetstream).
+- Gestion des rôles et permissions.
+- Tableau de bord statistique filtrable (par genre, région, type d’activité).
+- Exportation de rapports aux formats **PDF**, **Excel**, **CSV**.
+- Interface responsive compatible avec tous les navigateurs.
+- Sécurité des données (chiffrement, validation, sauvegarde).
+- Formation et transfert de compétences à la CRN.
+
+---
+
+## ⚙️ Technologies utilisées
+
+| Catégorie | Technologie |
+|------------|--------------|
+| Langage principal | PHP 8.2 |
+| Framework backend | Laravel 12.x |
+| Base de données | MySQL / SQLite (local) |
+| Frontend | HTML5, CSS3, JavaScript |
+| Design | TailwindCSS / Bootstrap |
+| Authentification | Laravel Jetstream & Fortify |
+| Versionnement | Git & GitHub |
+
+---
+
+## 🧱 Structure du projet (front)
+
+```
+
+resources/views/
+├── calendar.blade.php
+├── dashboard.blade.php
+├── documents.blade.php
+├── index.blade.php
+├── login.blade.php
+├── logout.blade.php
+├── messages.blade.php
+├── missions.blade.php
+├── profile.blade.php
+└── register.blade.php
+
+````
+
+---
+
+## 🧭 Routes principales
+
+```php
+Route::get('/', [FrontController::class, 'index'])->name('home');
+Route::get('/calendar', [FrontController::class, 'calendar'])->name('calendar');
+Route::get('/dashboard', [FrontController::class, 'dashboard'])->name('dashboard');
+Route::get('/documents', [FrontController::class, 'documents'])->name('documents');
+Route::get('/login', [FrontController::class, 'login'])->name('login');
+Route::get('/logout', [FrontController::class, 'logout'])->name('logout');
+Route::get('/messages', [FrontController::class, 'messages'])->name('messages');
+Route::get('/missions', [FrontController::class, 'missions'])->name('missions');
+Route::get('/profile', [FrontController::class, 'profile'])->name('profile');
+Route::get('/register', [FrontController::class, 'register'])->name('register');
+````
+
+---
+
+## 📦 Installation locale
+
+### 1️⃣ Cloner le dépôt
+
+```bash
+git clone https://github.com/Gitsimplon/Plateforme-Volontaire-Croix-Rouge.git
+cd Plateforme-Volontaire-Croix-Rouge
+```
+
+### 2️⃣ Installer les dépendances
+
+```bash
+composer install
+npm install
+```
+
+### 3️⃣ Configurer l’environnement
+
+```bash
+cp .env.example .env
+php artisan key:generate
+```
+
+Modifier ensuite les informations de base de données dans `.env`.
+
+### 4️⃣ Migrer la base et lancer le serveur
+
+```bash
+php artisan migrate
+php artisan serve
+```
+
+---
+
+## 📈 Résultats attendus
+
+* Une plateforme fonctionnelle, accessible 24/7.
+* Une base de données des volontaires à jour et sécurisée.
+* Une augmentation significative des inscriptions et de l’engagement.
+* Un meilleur suivi et reporting des activités.
+* Une valorisation du rôle du volontariat au Niger.
+
+---
+
+## 🤝 Crédits & Partenaires
+
+* **Croix-Rouge Nigérienne (CRN)**
+* **NSIA / FICR**
+* **RedHeart Dev Team (Gitsimplon)**
+* Soutien technique : **Croix-Rouge Belgique**
+
+---
+
+## 🛡️ Licence
+
+Ce projet est propriétaire de la **Croix-Rouge Nigérienne**.
+Toute reproduction ou diffusion est interdite sans autorisation préalable.
+
+---
+
+### 🌍 Contact
+
+📧 [hadjara.hamani@croixrouge.ne](mailto:hadjara.hamani@croixrouge.ne)
+📍 Niamey – Siège de la Croix-Rouge Nigérienne
+📅 Projet soutenu du 25 août au 30 octobre 2025
+
+---
+
+> *« Ensemble, faisons battre le cœur du volontariat au Niger ❤️ »*
+
+```
+
+---
