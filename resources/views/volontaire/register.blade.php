@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>S'inscrire | RedHeart Volunteers</title>
+    <title>S'inscrire | Volontaires Croix-Rouge</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
@@ -15,7 +15,7 @@
             <div class="flex items-center justify-between">
                 <a href="/" class="flex items-center">
                     <i data-feather="heart" class="text-red-600 w-6 h-6 mr-2"></i>
-                    <span class="font-semibold text-gray-800">RedHeart Volunteers</span>
+                    <span class="font-semibold text-gray-800">Volontaires Croix-Rouge</span>
                 </a>
                 <div>
                     <a href="/login" class="text-gray-600 hover:text-red-600 px-4 py-2">Se connecter</a>
