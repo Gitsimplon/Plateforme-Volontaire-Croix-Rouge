@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendrier | RedHeart Volunteers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.9/index.global.min.js"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="flex">
+        <!-- Sidebar Navigation -->
+        <div class="w-64 bg-red-800 text-white min-h-screen fixed">
+            <div class="p-4 mb-6">
+                <a href="/" class="flex items-center text-xl font-bold">
+                    <i data-feather="heart" class="mr-2"></i>
+                    RedHeart
+                </a>
+            </div>
+            <nav class="mt-8">
+                <div class="px-4 mb-6">
+                    <p class="text-xs uppercase text-red-300">Menu principal</p>
+                </div>
+                <a href="/dashboard.html" class="flex items-center px-4 py-3 text-red-100 hover:text-white">
+                    <i data-feather="home" class="mr-3"></i> Tableau de bord
+                </a>
+                <a href="/profile.html" class="flex items-center px-4 py-3 text-red-100 hover:text-white">
+                    <i data-feather="user" class="mr-3"></i> Mon profil
+                </a>
+                <a href="/missions.html" class="flex items-center px-4 py-3 text-red-100 hover:text-white">
+                    <i data-feather="activity" class="mr-3"></i> Missions
+                </a>
+                <a href="/calendar.html" class="flex items-center px-4 py-3 text-white bg-red-900">
+                    <i data-feather="calendar" class="mr-3"></i> Calendrier
+                </a>
+                <a href="/messages.html" class="flex items-center px-4 py-3 text-red-100 hover:text-white">
+                    <i data-feather="mail" class="mr-3"></i> Messagerie
+                </a>
+                <a href="/documents.html" class="flex items-center px-4 py-3 text-red-100 hover:text-white">
+                    <i data-feather="file-text" class="mr-3"></i> Documents
+                </a>
+                <a href="/logout.html" class="flex items-center px-4 py-3 text-red-100 hover:text-white mt-8">
+                    <i data-feather="log-out" class="mr-3"></i> Déconnexion
+                </a>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+        <div class="flex-1 ml-64">
+            <!-- Top Navigation -->
+            <header class="bg-white shadow-sm">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+                    <h1 class="text-xl font-semibold text-gray-800">Calendrier</h1>
+                    <div class="flex items-center space-x-4">
+                        <div class="relative">
+                            <i data-feather="bell" class="text-gray-500 hover:text-red-600 cursor-pointer"></i>
+                            <span class="absolute -top-1 -right-1 bg-red-600 text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">2</span>
+                        </div>
+                        <div class="flex items-center">
+                            <img src="http://static.photos/people/200x200/1" alt="Profile" class="w-8 h-8 rounded-full mr-2">
+                            <span class="text-sm font-medium">Nom Utilisateur</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Calendar Content -->
+            <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+                <div class="bg-white rounded-lg shadow p-6">
+                    <div id="calendar"></div>
+                </div>
+
+                <!-- Upcoming Events -->
+                <div class="mt-8 bg-white rounded-lg shadow overflow-hidden">
+                    <div class="px-6 py-4 border-b border-gray-200">
+                        <h2 class="text-lg font-semibold">Événements à venir</h2>
+                    </div>
+                    <div class="divide-y divide-gray-200">
+                        <div class="px-6 py-4">
+                            <div class="flex items-center">
+                                <div class="bg-red-100 text-red-600 p-2 rounded mr-4">
+                                    <i data-feather="activity"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-medium">Distribution alimentaire - Quartier Dar Salam</h3>
+                                    <p class="text-sm text-gray-600 mt-1">
+                                        <span class="flex items-center"><i data-feather="calendar" class="w-4 h-4 mr-1"></i> 25 Nov 2023, 08:00 - 14:00</span>
+                                        <span class="flex items-center mt-1"><i data-feather="map-pin" class="w-4 h-4 mr-1"></i> Niamey, Quartier Dar Salam</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-6 py-4">
+                            <div class="flex items-center">
+                                <div class="bg-red-100 text-red-600 p-2 rounded mr-4">
+                                    <i data-feather="award"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-medium">Formation premiers secours - École primaire</h3>
+                                    <p class="text-sm text-gray-600 mt-1">
+                                        <span class="flex items-center"><i data-feather="calendar" class="w-4 h-4 mr-1"></i> 3-4 Déc 2023, 09:00 - 15:00</span>
+                                        <span class="flex items-center mt-1"><i data-feather="map-pin" class="w-4 h-4 mr-1"></i> Maradi, École primaire Centre</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-6 py-4">
+                            <div class="flex items-center">
+                                <div class="bg-red-100 text-red-600 p-2 rounded mr-4">
+                                    <i data-feather="users"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-medium">Réunion des volontaires régionaux</h3>
+                                    <p class="text-sm text-gray-600 mt-1">
+                                        <span class="flex items-center"><i data-feather="calendar" class="w-4 h-4 mr-1"></i> 28 Nov 2023, 15:00 - 17:00</span>
+                                        <span class="flex items-center mt-1"><i data-feather="map-pin" class="w-4 h-4 mr-1"></i> En ligne (Zoom)</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script>
+        // Initialize feather icons
+        document.addEventListener('DOMContentLoaded', function() {
+            feather.replace();
+            
+            // Initialize calendar
+            const calendarEl = document.getElementById('calendar');
+            const calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                headerToolbar: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
+                },
+                buttonText: {
+                    today: 'Aujourd\'hui',
+                    month: 'Mois',
+                    week: 'Semaine',
+                    day: 'Jour',
+                    list: 'Liste'
+                },
+                events: [
+                    {
+                        title: 'Distribution alimentaire',
+                        start: '2023-11-25T08:00:00',
+                        end: '2023-11-25T14:00:00',
+                        color: '#ED1C3A',
+                        extendedProps: {
+                            location: 'Niamey, Quartier Dar Salam',
+                            type: 'mission'
+                        }
+                    },
+                    {
+                        title: 'Formation premiers secours',
+                        start: '2023-12-03T09:00:00',
+                        end: '2023-12-04T15:00:00',
+                        color: '#2E86AB',
+                        extendedProps: {
+                            location: 'Maradi, École primaire Centre',
+                            type: 'formation'
+                        }
+                    },
+                    {
+                        title: 'Réunion des volontaires',
+                        start: '2023-11-28T15:00:00',
+                        end: '2023-11-28T17:00:00',
+                        color: '#00A878',
+                        extendedProps: {
+                            location: 'En ligne (Zoom)',
+                            type: 'reunion'
+                        }
+                    },
+                    {
+                        title: 'Sensibilisation COVID-19',
+                        start: '2023-11-15',
+                        end: '2023-11-18',
+                        color: '#F18F01',
+                        extendedProps: {
+                            location: 'Zinder, Marché central',
+                            type: 'mission'
+                        }
+                    }
+                ],
+                eventClick: function(info) {
+                    alert('Événement: ' + info.event.title + '\n' +
+                          'Lieu: ' + info.event.extendedProps.location + '\n' +
+                          'Type: ' + info.event.extendedProps.type);
+                }
+            });
+            calendar.render();
+        });
+    </script>
+</body>
+</html>
