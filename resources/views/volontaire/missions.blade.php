@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missions | RedHeart Volunteers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="flex">
+        <!-- Sidebar Navigation -->
+        <div class="w-64 bg-red-800 text-white min-h-screen fixed">
+            <div class="p-4 mb-6">
+                <a href="/" class="flex items-center text-xl font-bold">
+                    <i data-feather="heart" class="mr-2"></i>
+                    RedHeart
+                </a>
+            </div>
+            <nav class="mt-8">
+                <div class="px-4 mb-6">
+                    <p class="text-xs uppercase text-red-300">Menu principal</p>
+                </div>
+                <a href="/dashboard" class="flex items-center px-4 py-3 text-red-100 hover:text-white">
+                    <i data-feather="home" class="mr-3"></i> Tableau de bord
+                </a>
+                <a href="/profile" class="flex items-center px-4 py-3 text-red-100 hover:text-white">
+                    <i data-feather="user" class="mr-3"></i> Mon profil
+                </a>
+                <a href="/missions" class="flex items-center px-4 py-3 text-white bg-red-900">
+                    <i data-feather="activity" class="mr-3"></i> Missions
+                </a>
+                <a href="/calendar" class="flex items-center px-4 py-3 text-red-100 hover:text-white">
+                    <i data-feather="calendar" class="mr-3"></i> Calendrier
+                </a>
+                <a href="/messages" class="flex items-center px-4 py-3 text-red-100 hover:text-white">
+                    <i data-feather="mail" class="mr-3"></i> Messagerie
+                </a>
+                <a href="/documents" class="flex items-center px-4 py-3 text-red-100 hover:text-white">
+                    <i data-feather="file-text" class="mr-3"></i> Documents
+                </a>
+                <a href="/logout" class="flex items-center px-4 py-3 text-red-100 hover:text-white mt-8">
+                    <i data-feather="log-out" class="mr-3"></i> Déconnexion
+                </a>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+        <div class="flex-1 ml-64">
+            <!-- Top Navigation -->
+            <header class="bg-white shadow-sm">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+                    <h1 class="text-xl font-semibold text-gray-800">Missions</h1>
+                    <div class="flex items-center space-x-4">
+                        <div class="relative">
+                            <i data-feather="bell" class="text-gray-500 hover:text-red-600 cursor-pointer"></i>
+                            <span class="absolute -top-1 -right-1 bg-red-600 text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">1</span>
+                        </div>
+                        <div class="flex items-center">
+                            <img src="http://static.photos/people/200x200/1" alt="Profile" class="w-8 h-8 rounded-full mr-2">
+                            <span class="text-sm font-medium">Nom Utilisateur</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Missions Content -->
+            <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+                <!-- Filters -->
+                <div class="bg-white rounded-lg shadow p-6 mb-6">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                        <div class="mb-4 md:mb-0">
+                            <h3 class="font-semibold">Filtrer les missions</h3>
+                        </div>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <select class="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-500">
+                                <option>Toutes les régions</option>
+                                <option>Niamey</option>
+                                <option>Agadez</option>
+                                <option>Diffa</option>
+                                <option>Dosso</option>
+                                <option>Maradi</option>
+                                <option>Tahoua</option>
+                                <option>Tillabéri</option>
+                                <option>Zinder</option>
+                            </select>
+                            <select class="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-500">
+                                <option>Tous les statuts</option>
+                                <option>Disponible</option>
+                                <option>À venir</option>
+                                <option>En cours</option>
+                                <option>Terminée</option>
+                            </select>
+                            <button class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md">
+                                <i data-feather="filter" class="w-4 h-4 mr-2 inline"></i> Filtrer
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Missions List -->
+                <div class="space-y-6">
+                    <!-- Mission Card -->
+                    <div class="bg-white rounded-lg shadow overflow-hidden">
+                        <div class="md:flex">
+                            <div class="md:w-1/4">
+                                <img src="http://static.photos/people/640x360/10" alt="Mission" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6 md:w-3/4">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <h2 class="text-xl font-bold">Distribution alimentaire - Quartier Dar Salam</h2>
+                                        <div class="flex items-center mt-2 text-sm text-gray-600">
+                                            <i data-feather="map-pin" class="w-4 h-4 mr-1"></i>
+                                            <span>Niamey, Quartier Dar Salam</span>
+                                        </div>
+                                    </div>
+                                    <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Disponible</span>
+                                </div>
+                                <div class="flex flex-wrap gap-2 my-4">
+                                    <span class="bg-red-100 text-red-800 text-xs px-2 py-1 rounded-full">Alimentation</span>
+                                    <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">Distribution</span>
+                                    <span class="bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full">Communauté</span>
+                                </div>
+                                <p class="text-gray-700 mb-4">
+                                    Distribution de kits alimentaires aux familles vulnérables du quartier Dar Salam dans le cadre du programme de sécurité alimentaire de la CRN.
+                                </p>
+                                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+                                    <div class="mb-4 sm:mb-0">
+                                        <div class="flex items-center text-sm text-gray-600">
+                                            <i data-feather="calendar" class="w-4 h-4 mr-1"></i>
+                                            <span>25 Nov 2023, 08:00 - 14:00</span>
+                                        </div>
+                                        <div class="flex items-center text-sm text-gray-600 mt-1">
+                                            <i data-feather="users" class="w-4 h-4 mr-1"></i>
+                                            <span>15 volontaires requis</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex space-x-2">
+                                        <button class="border border-red-600 text-red-600 hover:bg-red-50 px-4 py-2 rounded-md">
+                                            <i data-feather="info" class="w-4 h-4 mr-1 inline"></i> Détails
+                                        </button>
+                                        <button class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md">
+                                            <i data-feather="plus" class="w-4 h-4 mr-1 inline"></i> S'inscrire
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mission Card -->
+                    <div class="bg-white rounded-lg shadow overflow-hidden">
+                        <div class="md:flex">
+                            <div class="md:w-1/4">
+                                <img src="http://static.photos/people/640x360/11" alt="Mission" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6 md:w-3/4">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <h2 class="text-xl font-bold">Formation premiers secours - École primaire</h2>
+                                        <div class="flex items-center mt-2 text-sm text-gray-600">
+                                            <i data-feather="map-pin" class="w-4 h-4 mr-1"></i>
+                                            <span>Maradi, École primaire Centre</span>
+                                        </div>
+                                    </div>
+                                    <span class="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded-full">À venir</span>
+                                </div>
+                                <div class="flex flex-wrap gap-2 my-4">
+                                    <span class="bg-red-100 text-red-800 text-xs px-2 py-1 rounded-full">Santé</span>
+                                    <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Éducation</span>
+                                    <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded-full">Formation</span>
+                                </div>
+                                <p class="text-gray-700 mb-4">
+                                    Formation aux gestes de premiers secours pour les enseignants et élèves de l'école primaire de Maradi Centre. Certification de participation délivrée.
+                                </p>
+                                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+                                    <div class="mb-4 sm:mb-0">
+                                        <div class="flex items-center text-sm text-gray-600">
+                                            <i data-feather="calendar" class="w-4 h-4 mr-1"></i>
+                                            <span>3-4 Déc 2023, 09:00 - 15:00</span>
+                                        </div>
+                                        <div class="flex items-center text-sm text-gray-600 mt-1">
+                                            <i data-feather="users" class="w-4 h-4 mr-1"></i>
+                                            <span>5 volontaires requis (certifiés premiers secours)</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex space-x-2">
+                                        <button class="border border-red-600 text-red-600 hover:bg-red-50 px-4 py-2 rounded-md">
+                                            <i data-feather="info" class="w-4 h-4 mr-1 inline"></i> Détails
+                                        </button>
+                                        <button class="bg-gray-300 text-gray-600 px-4 py-2 rounded-md cursor-not-allowed" disabled>
+                                            <i data-feather="check" class="w-4 h-4 mr-1 inline"></i> Déjà inscrit
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mission Card -->
+                    <div class="bg-white rounded-lg shadow overflow-hidden">
+                        <div class="md:flex">
+                            <div class="md:w-1/4">
+                                <img src="http://static.photos/people/640x360/12" alt="Mission" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6 md:w-3/4">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <h2 class="text-xl font-bold">Sensibilisation COVID-19 - Marché central</h2>
+                                        <div class="flex items-center mt-2 text-sm text-gray-600">
+                                            <i data-feather="map-pin" class="w-4 h-4 mr-1"></i>
+                                            <span>Zinder, Marché central</span>
+                                        </div>
+                                    </div>
+                                    <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">En cours</span>
+                                </div>
+                                <div class="flex flex-wrap gap-2 my-4">
+                                    <span class="bg-red-100 text-red-800 text-xs px-2 py-1 rounded-full">Santé</span>
+                                    <span class="bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full">Sensibilisation</span>
+                                    <span class="bg-pink-100 text-pink-800 text-xs px-2 py-1 rounded-full">COVID-19</span>
+                                </div>
+                                <p class="text-gray-700 mb-4">
+                                    Campagne de sensibilisation sur les mesures de prévention contre la COVID-19 au marché central de Zinder. Distribution de masques et gel hydroalcoolique.
+                                </p>
+                                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+                                    <div class="mb-4 sm:mb-0">
+                                        <div class="flex items-center text-sm text-gray-600">
+                                            <i data-feather="calendar" class="w-4 h-4 mr-1"></i>
+                                            <span>15-18 Nov 2023, 07:00 - 12:00</span>
+                                        </div>
+                                        <div class="flex items-center text-sm text-gray-600 mt-1">
+                                            <i data-feather="users" class="w-4 h-4 mr-1"></i>
+                                            <span>10 volontaires requis</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex space-x-2">
+                                        <button class="border border-red-600 text-red-600 hover:bg-red-50 px-4 py-2 rounded-md">
+                                            <i data-feather="info" class="w-4 h-4 mr-1 inline"></i> Détails
+                                        </button>
+                                        <button class="bg-gray-300 text-gray-600 px-4 py-2 rounded-md cursor-not-allowed" disabled>
+                                            <i data-feather="x" class="w-4 h-4 mr-1 inline"></i> Complète
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <div class="mt-8 flex justify-center">
+                    <nav class="flex items-center space-x-2">
+                        <button class="px-3 py-1 rounded border text-gray-600 hover:bg-gray-100">
+                            <i data-feather="chevron-left" class="w-4 h-4"></i>
+                        </button>
+                        <button class="px-3 py-1 rounded border bg-red-600 text-white">1</button>
+                        <button class="px-3 py-1 rounded border text-gray-600 hover:bg-gray-100">2</button>
+                        <button class="px-3 py-1 rounded border text-gray-600 hover:bg-gray-100">3</button>
+                        <button class="px-3 py-1 rounded border text-gray-600 hover:bg-gray-100">
+                            <i data-feather="chevron-right" class="w-4 h-4"></i>
+                        </button>
+                    </nav>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script>
+        // Initialize feather icons
+        document.addEventListener('DOMContentLoaded', function() {
+            feather.replace();
+        });
+    </script>
+</body>
+</html>
